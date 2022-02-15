@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>App Contactos</title>
+</head>
+
+<body>
+  <section class="call">
+    <div class="pad">
+      <p class="input-viewer"></p>
+      <div class="pad-number">
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button class="call action">Llamar</button>
+        <button class="number">0</button>
+        <button class="clear action">Borrar</button>
+      </div>
+    </div>
+    <div class="actions">
+      <button class="change-section action">
+        Contactos
+      </button>
+    </div>
+  </section>
+  <section class="contact hide">
+    <form id="contact-form">
+      <label for="name">Nombre</label>
+      <input type="text" name="name" id="name" required>
+
+      <label for="lastname">Apellido</label>
+      <input type="text" name="lastname" id="lastname" required>
+
+      <label for="phone">N° Teléfono</label>
+      <input type="number" name="phone" id="phone" required maxlength="9">
+
+      <button class="save-contact action">Guardar Contacto</button>
+    </form>
+    <ol class="contact-list">
+
+    </ol>
+  </section>
+  <div class="popup">
+    Llamando <span class="call-phone-number"></span>
+  </div>
+  <div class="error hide">
+    Capacidad de disco insuficiente
+  </div>
+  <div class="error-duplicate hide">
+    El número está duplicado
+  </div>
+</body>
+<script src="index.js"></script>
+
+</html>

@@ -1,0 +1,75 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  body {
+    width: 600px;
+  }
+  * {
+    font-size: 1.2rem;
+  }
+  li {
+    list-style: none;
+  }
+  .popup, .contact {
+    display: none;
+  }
+  .call, .pad {
+    display: flex;
+    flex-direction: column;
+  }
+  .pad-number {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    border: 1px solid purple;
+  }
+  .input-viewer {
+    height: 1rem;
+  }
+  .number {
+    background-color: white;
+    border-radius: 0%;
+    border: 1px solid purple;
+    outline: none;
+  }
+  .action {
+    background-color: white;
+    border-radius: 0%;
+    border: 1px solid purple;
+    color: purple;
+    outline: none;
+  }
+  .number:hover, .action:hover {
+    cursor: pointer;
+    background-color: hsla(300, 100%, 25%, 0.5);
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0%;
+  }
+  .contact-list > li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid purple;
+  }
+  li > p:nth-child(2) {
+    font-style: italic;
+  }
+  
+  .show {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+  
