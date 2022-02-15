@@ -136,7 +136,7 @@ const handleInput = e => {
   const createFirstContact = () => {
     const contactList = getLocalStorage();
     if (!contactList.length) {
-      saveLocalStorage({ name: "dev", lastname: "dev", phone: "1" });
+      saveLocalStorage({ name: "Natalia", lastname: "caiconte", phone: "987252331" });
       populateContactList();
     };
   };
